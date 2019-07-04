@@ -22,8 +22,8 @@
  *
  ********************************************************************************/
 
-#ifndef _FSM_/*@ cat(ucase(Project), "_", ucase(Project), "_H_") //*/
-#define _FSM_/*@ cat(ucase(Project), "_", ucase(Project), "_H_") //*/
+#ifndef _FSM_/*@ cat(ucase(Project), "_", ucase(FILENAME), "_H_") //*/
+#define _FSM_/*@ cat(ucase(Project), "_", ucase(FILENAME), "_H_") //*/
 
 /* Machine Inputs */
 
@@ -33,7 +33,7 @@ typedef enum {
     /*@for index, var in Variables.BooleanInputs:/*@_ //*/
     ebi/*@var.Name//*//*@if index < Variables.BooleanInputs - 1:,//*/
     //*/
-} EBooleanInputs;
+} E@project_BooleanInputs;
 //*/
 
 /*@if Variables.InputEvents:/*@_ //*/
@@ -42,7 +42,7 @@ typedef enum {
     /*@for index, var in Variables.InputEvents:/*@_ //*/
     eie/*@var//*//*@if index < Variables.InputEvents - 1:,//*/
     //*/
-} EInputEvents;
+} E@project_InputEvents;
 //*/
 
 /* Machine Flags */
@@ -53,7 +53,7 @@ typedef enum {
     /*@for index, var in Variables.BooleanFlags:/*@_ //*/
     ebf/*@var.Name//*//*@if index < Variables.BooleanFlags - 1:,//*/
     //*/
-} EBooleanFlags;
+} E@project_BooleanFlags;
 //*/
 
 /*@if Variables.CounterFlags:/*@_ //*/
@@ -62,7 +62,7 @@ typedef enum {
     /*@for index, var in Variables.CounterFlags:/*@_ //*/
     ecf/*@var.Name//*//*@if index < Variables.CounterFlags - 1:,//*/
     //*/
-} ECounterFlags;
+} E@project_CounterFlags;
 //*/
 
 /*@if Variables.MessageFlags:/*@_ //*/
@@ -71,7 +71,7 @@ typedef enum {
     /*@for index, var in Variables.MessageFlags:/*@_ //*/
     emf/*@var//*//*@if index < Variables.MessageFlags - 1:,//*/
     //*/
-} EMessageFlags;
+} E@project_MessageFlags;
 //*/
 
 /* Machine Outputs */
@@ -82,7 +82,7 @@ typedef enum {
     /*@for index, var in Variables.BooleanOutputs:/*@_ //*/
     ebo/*@var.Name//*//*@if index < Variables.BooleanOutputs - 1:,//*/
     //*/
-} EBooleanOutputs;
+} E@project_BooleanOutputs;
 //*/
 
 /*@if Variables.OutputEvents:/*@_ //*/
@@ -91,7 +91,7 @@ typedef enum {
     /*@for index, var in Variables.OutputEvents:/*@_ //*/
     eoe/*@var//*//*@if index < Variables.OutputEvents - 1:,//*/
     //*/
-} EOutputEvents;
+} E@project_OutputEvents;
 //*/
 
-#endif //_FSM_/*@ cat(ucase(Project), "_", ucase(Project), "_H_") //*/
+#endif //_FSM_/*@ cat(ucase(Project), "_", ucase(FILENAME), "_H_") //*/

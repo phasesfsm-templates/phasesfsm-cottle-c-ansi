@@ -22,9 +22,9 @@
  *
  ********************************************************************************/
 
-#ifndef _FSM_/*@ cat(ucase(Project), "_", ucase(Project), "_H_") //*/
-#define _FSM_/*@ cat(ucase(Project), "_", ucase(Project), "_H_") //*/
+#ifndef _FSM_/*@ cat(ucase(Project), "_", ucase(FILENAME), "_H_") //*/
+#define _FSM_/*@ cat(ucase(Project), "_", ucase(FILENAME), "_H_") //*/
 
 
 
-#endif //_FSM_/*@ cat(ucase(Project), "_", ucase(Project), "_H_") //*/
+#endif //_FSM_/*@ cat(ucase(Project), "_", ucase(FILENAME), "_H_") //*/
